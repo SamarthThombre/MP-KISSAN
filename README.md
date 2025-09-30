@@ -1,3 +1,8 @@
+srs
+https://drive.google.com/file/d/1oEaCUxMZKLGIkeR5ogtTcSIAvQQ1MLi7/view?usp=sharing
+
+###design is still on going and not yet completed
+
 FIGMA 
 https://www.figma.com/design/ixYvdskR6RMbLM5ed3AIbs/Untitled?node-id=0-1&t=Cz7TM949aXUJoDgy-1
 
