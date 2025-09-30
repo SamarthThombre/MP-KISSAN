@@ -1,3 +1,6 @@
+FIGMA 
+https://www.figma.com/design/ixYvdskR6RMbLM5ed3AIbs/Untitled?node-id=0-1&t=Cz7TM949aXUJoDgy-1
+
 Week 1: Project Setup & Authentication
 
 Goal: Get the basic project structure up and running with user login/signup.
