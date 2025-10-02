@@ -2,20 +2,10 @@ import Navbar from "./NavBar";
 
 const Header = () => {
   return (
-    <header
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        background: "#2e7d32",
-        padding: "1rem 2rem",
-        color: "white",
-        position: "sticky",
-        top: 0,
-        zIndex: 1000,
-      }}
-    >
-      <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>🌱 MP KISSAN</div>
+    <header className="bg-green-700 text-white sticky top-0 z-50 flex justify-between items-center px-8 py-4 shadow-md">
+      <div className="text-2xl font-bold flex items-center gap-2">
+        🌱 MP KISSAN
+      </div>
       <Navbar />
     </header>
   );

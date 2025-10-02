@@ -1,17 +1,8 @@
-
 const Footer = () => {
   return (
-    <footer
-      style={{
-        background: "#2e7d32",
-        color: "white",
-        padding: "1rem 2rem",
-        textAlign: "center",
-        marginTop: "2rem",
-      }}
-    >
-      <p style={{ margin: "0.5rem 0" }}>🌱 MP KISSAN</p>
-      <p style={{ margin: "0.5rem 0", fontSize: "0.9rem" }}>
+    <footer className="bg-green-700 text-white py-4 px-8 mt-8 text-center">
+      <p className="my-1 text-lg">🌱 MP KISSAN</p>
+      <p className="my-1 text-sm">
         © {new Date().getFullYear()} MP KISSAN. All rights reserved.
       </p>
     </footer>

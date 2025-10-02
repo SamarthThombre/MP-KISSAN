@@ -2,7 +2,7 @@
 
 const DashBoard = () => {
     return (
-        <p>DashBoard</p>
+        <p className="">DashBoard</p>
     )
 }
 
