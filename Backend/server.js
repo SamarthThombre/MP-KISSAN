@@ -1,7 +1,7 @@
-
 import express from 'express';
 import dotenv from 'dotenv';
-import connectDB from './config/db.js';
+import connectDB from './src/config/db.js';
+import MainRouter from './src/routes/mainRouter.js'
 
 dotenv.config();
 
@@ -13,6 +13,28 @@ connectDB();
 app.get('/', (req, res) => {
   res.send('working')
 })
+
+app.use("/api",MainRouter);
+
+//Global Eror handeer for server 
+app.use((err,req,res,next) => {
+  if (err.name === "APIError"){
+    return res.status(err.statuscode || 500).json({
+      success: err.success,
+      message: err.message,
+      error: err.error || [],
+      data: err.data || null,
+    });
+  }
+  
+  // For unknown errors
+  res.status(500).json({
+    success: false,
+    message: err.message || "Something went wrong",
+    error: [],
+    data: null
+    });
+});
 
 const PORT = process.env.PORT || 5000;
 
