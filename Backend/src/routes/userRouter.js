@@ -3,7 +3,10 @@ import { Router } from "express";
 
 const router = Router()
 
-// router.route("/regester").post(regesterUser)
+router.get('/', (req,res) => {
+    res.send('[User_Router] User api working')
+})
+router.route("/regester").post(regesterUser)
 // router.route("/login").post(loginUser)
 
 // // secure route
