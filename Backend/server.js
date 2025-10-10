@@ -6,12 +6,14 @@ import MainRouter from './src/routes/mainRouter.js'
 dotenv.config();
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Connect to the database
 connectDB();
 
 app.get('/', (req, res) => {
-  res.send('working')
+  res.send('[ Server ] working')
 })
 
 app.use("/api",MainRouter);

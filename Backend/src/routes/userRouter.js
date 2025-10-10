@@ -1,12 +1,16 @@
 import { Router } from "express";
+import { registerUser } from "../controller/userController.js";
 
 
 const router = Router()
 
-router.get('/', (req,res) => {
-    res.send('[User_Router] User api working')
-})
-router.route("/regester").post(regesterUser)
+router.get("/test", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "[User-router] Backend route is working perfectly!",
+  });
+});
+router.route("/regester").post(registerUser)
 // router.route("/login").post(loginUser)
 
 // // secure route
